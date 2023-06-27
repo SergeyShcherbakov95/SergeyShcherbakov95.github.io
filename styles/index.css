@@ -1,0 +1,151 @@
+@font-face {
+  font-family: 'Overpass';
+  src: url('../fonts/Overpass-Medium.woff2') format('woff2');
+}
+
+body {
+  font-family: 'Overpass', sans-serif;
+  max-width: 1276px;
+  margin: 26px auto;       
+
+  font-size: 18px;
+  line-height: 21.6px;
+  letter-spacing: -0.144px;
+  font-weight: 500;	
+  color: #1E1E1E;
+}
+
+header, footer {
+	display: flex;
+}
+
+.header-title {
+	align-self: center;
+	margin-right: auto;
+}
+
+footer nav:first-child {
+	margin-right: auto;
+}
+
+nav.page-nav ul {
+	display: grid;
+	grid-template-columns: repeat(4, auto);
+	gap: 48px;
+}
+
+nav.external-nav ul {
+	display: grid;
+	grid-template-columns: repeat(2, auto);
+	gap: 48px;
+}
+
+nav ul {
+	padding-left: 0px;
+}
+
+nav ul li {
+	list-style: none;
+}
+
+nav ul li a {
+	color: #1E1E1E;
+	text-decoration: none;	
+}
+
+nav ul li a:hover {
+	opacity: 0.8;
+}
+
+main section {
+	display: grid;
+	justify-content: space-between;
+}
+
+.greeting-block {
+	max-width: 1006px;
+	margin-top: 150px;
+	margin-bottom: 200px;
+}
+
+.greeting-text {
+	font-size: 52px;
+	line-height: 62.4px;
+	letter-spacing: -2.08px;
+	color: #111;
+}
+
+.section-title {
+	opacity: 0.8;
+	grid-column: 1;
+}
+
+.section-body {
+	grid-column: 2;
+	display: flex;
+	flex-direction: column;
+	max-width: 750px;
+}
+
+.work-image {
+	max-width: auto;
+	border-radius: 40px;
+}
+
+.work-image-panel {
+	max-width: auto;
+	height: 85px;
+	background-color: #F7F7F7;
+	border-bottom-left-radius: 40px;
+	border-bottom-right-radius: 40px;
+	position: relative;
+	top: -80px;
+}
+
+.work-image-panel p {
+	margin-top: 24px;
+	margin-left: 24px;
+}
+
+#about div {
+	font-size: 30px;
+	letter-spacing: -1.2px;
+	line-height: 36px;
+	opacity: 0.8;
+}
+
+#contact {
+	border-radius: 60px;
+	background-color: #F6F6F6;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	height: 378px;
+	align-items: center;
+	margin-top: 200px;
+	margin-bottom: 200px;
+}
+
+.avatar {
+	width: 159px;
+	justify-self: end;
+	margin-right: 48px;
+	border-radius: 140px;
+}
+
+.contact-info {
+   width: 750px;
+   display: flex;
+   flex-flow: column;
+}
+
+.contact-hi-text {
+	color: #111;
+	font-size: 52px;
+	letter-spacing: -2.08px;
+}
+
+.contact-email-text {
+	font-size: 30px;
+	letter-spacing: -1.2px;
+	opacity: 0.8;
+}
