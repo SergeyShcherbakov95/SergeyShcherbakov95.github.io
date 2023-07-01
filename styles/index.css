@@ -1,151 +1,490 @@
 @font-face {
-  font-family: 'Overpass';
-  src: url('../fonts/Overpass-Medium.woff2') format('woff2');
+    font-family: 'Overpass';
+    src: url('../fonts/Overpass-Medium.woff2') format('woff2');
 }
 
 body {
-  font-family: 'Overpass', sans-serif;
-  max-width: 1276px;
-  margin: 26px auto;       
-
-  font-size: 18px;
-  line-height: 21.6px;
-  letter-spacing: -0.144px;
-  font-weight: 500;	
-  color: #1E1E1E;
+    font-family: 'Overpass', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    color: #1E1E1E;
 }
 
-header, footer {
-	display: flex;
+p {
+    margin: 0;
 }
 
-.header-title {
-	align-self: center;
-	margin-right: auto;
+a {
+    color: #1E1E1E;
+    text-decoration: none;
 }
 
-footer nav:first-child {
-	margin-right: auto;
-}
-
-nav.page-nav ul {
-	display: grid;
-	grid-template-columns: repeat(4, auto);
-	gap: 48px;
-}
-
-nav.external-nav ul {
-	display: grid;
-	grid-template-columns: repeat(2, auto);
-	gap: 48px;
+a:hover {
+    opacity: 0.8;
 }
 
 nav ul {
-	padding-left: 0px;
+    padding-left: 0;
 }
 
 nav ul li {
-	list-style: none;
+    list-style: none;
 }
 
-nav ul li a {
-	color: #1E1E1E;
-	text-decoration: none;	
+.external-link-icon {
+/*todo add styles for svg*/
 }
 
-nav ul li a:hover {
-	opacity: 0.8;
+.header-title {
+    margin-right: auto;
 }
 
-main section {
-	display: grid;
-	justify-content: space-between;
-}
-
-.greeting-block {
-	max-width: 1006px;
-	margin-top: 150px;
-	margin-bottom: 200px;
-}
-
-.greeting-text {
-	font-size: 52px;
-	line-height: 62.4px;
-	letter-spacing: -2.08px;
-	color: #111;
+main section:not(:first-child) {
+    padding-top: 200px;
 }
 
 .section-title {
-	opacity: 0.8;
-	grid-column: 1;
+    opacity: 0.8;
 }
 
-.section-body {
-	grid-column: 2;
-	display: flex;
-	flex-direction: column;
-	max-width: 750px;
+.work-card-panel-website {
+    opacity: 0.69;
 }
 
-.work-image {
-	max-width: auto;
-	border-radius: 40px;
+@media screen and (min-width: 1025px) {
+    body {
+        font-size: 18px;
+        line-height: 23px;
+        letter-spacing: -0.144px;
+
+        max-width: 1276px;
+        margin: 0 auto;
+        padding: 0 82px;
+    }
+
+    header, footer {
+        height: 118px;
+        display: flex;
+        align-items: center;
+    }
+
+    nav.navigation ul {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        grid-gap: 32px;
+    }
+
+    .greeting {
+        max-width: 1006px;
+        margin-top: 102px;
+    }
+
+    .greeting-text {
+        font-size: 52px;
+        line-height: 66px;
+        letter-spacing: -2.08px;
+    }
+
+    main section:not(:last-child) {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .section-body {
+        display: flex;
+        flex-direction: column;
+        max-width: 736px;
+    }
+
+    .text-section p {
+        font-size: 30px;
+        line-height: 38px;
+        letter-spacing: -1.2px;
+        opacity: 0.8;
+    }
+
+    .text-section p:not(:last-child) {
+        margin-bottom: 38px;
+    }
+
+    .work-card:not(:last-child) {
+        margin-bottom: 24px;
+    }
+
+    .work-card-image {
+        border-radius: 40px 40px 0 0;
+        width: 736px;
+        height: 465px;
+    }
+
+    .work-card:nth-child(1) .work-card-image {
+        background-image: url("../images/work/green-cheef/pc.png");
+    }
+
+    .work-card:nth-child(2) .work-card-image {
+        background-image: url("../images/work/indream-interior-design-studio/pc.png");
+    }
+
+    .work-card:nth-child(3) .work-card-image {
+        background-image: url("../images/work/rombo-guitar-picks/pc.png");
+    }
+
+    .work-card-panel {
+        border-radius: 0 0 40px 40px;
+        /*todo change color to F7F7F7*/
+        background: lightgrey;
+        height: 85px;
+        display: flex;
+        align-items: center;
+    }
+
+    .work-card-panel p {
+        padding-left: 24px;
+    }
+
+    #contact {
+        margin-bottom: 200px;
+    }
+
+    .contact-block {
+        height: 378px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        border-radius: 60px;
+        /*todo change color to F6F6F6*/
+        background-color: lightgrey;
+    }
+
+    .contact-block-avatar {
+        justify-self: end;
+        width: 181px;
+        margin-right: 69px;
+        border-radius: 140px;
+    }
+
+    .contact-block-info {
+        width: 736px;
+    }
+
+    .contact-block-info p:nth-child(1) {
+        font-size: 52px;
+        line-height: 66px;
+        letter-spacing: -2.08px;
+    }
+
+    .contact-block-info p:nth-child(2) {
+        font-size: 30px;
+        line-height: 38px;
+        letter-spacing: -1.2px;
+        opacity: 0.8;
+    }
+
+    footer nav:first-child {
+        margin-right: auto;
+    }
+
+    nav.external-links ul {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 32px;
+    }
 }
 
-.work-image-panel {
-	max-width: auto;
-	height: 85px;
-	background-color: #F7F7F7;
-	border-bottom-left-radius: 40px;
-	border-bottom-right-radius: 40px;
-	position: relative;
-	top: -80px;
+@media screen and (min-width: 376px) and (max-width: 1024px) {
+    body {
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: -0.128px;
+
+        max-width: 892px;
+        margin: 0 auto;
+        padding: 0 66px;
+    }
+
+    header, footer {
+        height: 115px;
+        display: flex;
+        align-items: center;
+    }
+
+    nav.navigation ul {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        grid-gap: 32px;
+    }
+
+    .greeting {
+        max-width: 684px;
+        margin-top: 102px;
+    }
+
+    .greeting-text {
+        font-size: 35px;
+        line-height: 44px;
+        letter-spacing: -1.4px;
+    }
+
+    main section:not(:last-child) {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .section-body {
+        display: flex;
+        flex-direction: column;
+        max-width: 588px;
+    }
+
+    .text-section p {
+        font-size: 28px;
+        line-height: 35px;
+        letter-spacing: -1.12px;
+        opacity: 0.8;
+    }
+
+    .text-section p:not(:last-child) {
+        margin-bottom: 35px;
+    }
+
+    .work-card:not(:last-child) {
+        margin-bottom: 24px;
+    }
+
+    .work-card-image {
+        border-radius: 40px 40px 0 0;
+        width: 588px;
+        height: 363px;
+    }
+
+    .work-card:nth-child(1) .work-card-image {
+        background-image: url("../images/work/green-cheef/tablet.png");
+    }
+
+    .work-card:nth-child(2) .work-card-image {
+        background-image: url("../images/work/indream-interior-design-studio/tablet.png");
+    }
+
+    .work-card:nth-child(3) .work-card-image {
+        background-image: url("../images/work/rombo-guitar-picks/tablet.png");
+    }
+
+    .work-card-panel {
+        height: 75px;
+        border-radius: 0 0 40px 40px;
+        /*todo change color to F7F7F7*/
+        background: lightgrey;
+        display: flex;
+        align-items: center;
+    }
+
+    .work-card-panel p {
+        padding-left: 24px;
+    }
+
+    #contact {
+        margin-bottom: 200px;
+    }
+
+    .contact-block {
+        height: 335px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        border-radius: 60px;
+        /*todo change color to F6F6F6*/
+        background-color: lightgrey;
+    }
+
+    .contact-block-avatar {
+        justify-self: end;
+        width: 159px;
+        margin-right: 40px;
+        border-radius: 140px;
+    }
+
+    .contact-block-info {
+        width: 588px;
+    }
+
+    .contact-block-info p:nth-child(1) {
+        font-size: 35px;
+        line-height: 44px;
+        letter-spacing: -1.4px;
+    }
+
+    .contact-block-info p:nth-child(2) {
+        font-size: 28px;
+        line-height: 35px;
+        letter-spacing: -1.12px;
+        opacity: 0.8;
+    }
+
+    footer nav:first-child {
+        margin-right: auto;
+    }
+
+    nav.external-links ul {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 32px;
+    }
 }
 
-.work-image-panel p {
-	margin-top: 24px;
-	margin-left: 24px;
-}
+@media screen and (max-width: 375px) {
+    body {
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: -0.128px;
 
-#about div {
-	font-size: 30px;
-	letter-spacing: -1.2px;
-	line-height: 36px;
-	opacity: 0.8;
-}
+        width: 320px;
+        margin: 0 27px 0 28px;
+        padding: 0 28px;
+    }
 
-#contact {
-	border-radius: 60px;
-	background-color: #F6F6F6;
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	height: 378px;
-	align-items: center;
-	margin-top: 200px;
-	margin-bottom: 200px;
-}
+    header, footer {
+        height: 115px;
+        display: flex;
+        align-items: center;
+    }
 
-.avatar {
-	width: 159px;
-	justify-self: end;
-	margin-right: 48px;
-	border-radius: 140px;
-}
+    header li:not(:last-child) {
+        /*todo add burget menu*/
+        display: none;
+    }
 
-.contact-info {
-   width: 750px;
-   display: flex;
-   flex-flow: column;
-}
+    .greeting {
+        max-width: 320px;
+        margin-top: 102px;
+    }
 
-.contact-hi-text {
-	color: #111;
-	font-size: 52px;
-	letter-spacing: -2.08px;
-}
+    .greeting-text {
+        font-size: 25px;
+        line-height: 32px;
+        letter-spacing: -1px;
+    }
 
-.contact-email-text {
-	font-size: 30px;
-	letter-spacing: -1.2px;
-	opacity: 0.8;
+    .section-body {
+        display: flex;
+        flex-direction: column;
+        max-width: 320px;
+    }
+
+    .text-section p {
+        font-size: 20px;
+        line-height: 25px;
+        letter-spacing: -0.8px;
+        opacity: 0.8;
+    }
+
+    .text-section p:first-child {
+        margin-top: 48px;
+    }
+
+    .text-section p:not(:last-child) {
+        margin-bottom: 25px;
+    }
+
+    .work-card {
+        width: 320px;
+    }
+
+    .work-card:first-child {
+        margin-top: 48px;
+    }
+
+    .work-card:not(:last-child) {
+        margin-bottom: 24px;
+    }
+
+    .work-card-image {
+        border-radius: 40px 40px 0 0;
+        width: 320px;
+        height: 363px;
+    }
+
+    .work-card:nth-child(1) .work-card-image {
+        background-image: url("../images/work/green-cheef/mobile.png");
+    }
+
+    .work-card:nth-child(2) .work-card-image {
+        background-image: url("../images/work/indream-interior-design-studio/mobile.png");
+    }
+
+    .work-card:nth-child(3) .work-card-image {
+        background-image: url("../images/work/rombo-guitar-picks/mobile.png");
+    }
+
+    .work-card-panel {
+        border-radius: 0 0 40px 40px;
+        /*todo change color to F7F7F7*/
+        background: lightgrey;
+        height: 75px;
+        display: flex;
+        align-items: center;
+    }
+
+    .work-card-panel p {
+        padding-left: 24px;
+    }
+
+    #contact {
+        margin-bottom: 200px;
+    }
+
+    .contact-block {
+        height: 513px;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+        border-radius: 60px;
+        /*todo change color to F6F6F6*/
+        background-color: lightgrey;
+    }
+
+    .contact-block-avatar {
+        align-self: end;
+        width: 159px;
+        border-radius: 140px;
+    }
+
+    .contact-block-info {
+        margin-top: 30px;
+    }
+
+    .contact-block-info p:nth-child(1) {
+        font-size: 25px;
+        line-height: 32px;
+        letter-spacing: -1px;
+    }
+
+    .contact-block-info p:nth-child(2) {
+        font-size: 18px;
+        line-height: 23px;
+        letter-spacing: -0.72px;
+        opacity: 0.8;
+        margin-top: 16px;
+    }
+
+    footer {
+        height: auto;
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-between;
+        gap: 61px;
+        margin-bottom: 48px;
+    }
+
+    footer nav.navigation ul {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        column-gap: 61px;
+        row-gap: 24px;
+    }
+
+    footer nav.external-links ul {
+        display: grid;
+        grid-template-columns: auto;
+        row-gap: 24px;
+    }
 }
