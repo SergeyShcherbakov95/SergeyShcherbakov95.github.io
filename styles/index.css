@@ -1,13 +1,7 @@
-/*
- main sizes for fonts
- pc - 1024 -> x
- tablet - 375 <- x -> 1024
- mobile - x <- 375
- */
 /* font */
 @font-face {
     font-family: 'Overpass';
-    src: url('../fonts/Overpass-Medium.woff2') format('woff2');
+    src: url('/fonts/Overpass-Medium.woff2') format('woff2');
 }
 
 /* common */
@@ -82,10 +76,6 @@ nav ul {
 
 nav ul li {
     list-style: none;
-}
-
-.external-link-icon {
-    /*todo add styles for svg*/
 }
 
 @media screen and (min-width: 1025px) {
@@ -359,21 +349,20 @@ main section:not(:first-child) {
     }
 
     .work-card:nth-child(1) .work-card-image {
-        background-image: url("../images/work/green-cheef/pc.png");
+        background-image: url("/images/work/green-chef/pc.png");
     }
 
     .work-card:nth-child(2) .work-card-image {
-        background-image: url("../images/work/indream-interior-design-studio/pc.png");
+        background-image: url("/images/work/indream-design/pc.png");
     }
 
     .work-card:nth-child(3) .work-card-image {
-        background-image: url("../images/work/rombo-guitar-picks/pc.png");
+        background-image: url("/images/work/rombo-guitar-picks/pc.png");
     }
 
     .work-card-panel {
         border-radius: 0 0 40px 40px;
-        /*todo change color to F7F7F7*/
-        background: lightgrey;
+        background: #F7F7F7;
         height: 85px;
         display: flex;
         align-items: center;
@@ -396,21 +385,20 @@ main section:not(:first-child) {
     }
 
     .work-card:nth-child(1) .work-card-image {
-        background-image: url("../images/work/green-cheef/tablet.png");
+        background-image: url("/images/work/green-chef/tablet.png");
     }
 
     .work-card:nth-child(2) .work-card-image {
-        background-image: url("../images/work/indream-interior-design-studio/tablet.png");
+        background-image: url("/images/work/indream-design/tablet.png");
     }
 
     .work-card:nth-child(3) .work-card-image {
-        background-image: url("../images/work/rombo-guitar-picks/tablet.png");
+        background-image: url("/images/work/rombo-guitar-picks/tablet.png");
     }
 
     .work-card-panel {
         border-radius: 0 0 40px 40px;
-        /*todo change color to F7F7F7*/
-        background: lightgrey;
+        background: #F7F7F7;
         height: 85px;
         display: flex;
         align-items: center;
@@ -438,17 +426,17 @@ main section:not(:first-child) {
     }
 
     .work-card:nth-child(1) .work-card-image {
-        background-image: url("../images/work/green-cheef/tablet.png");
+        background-image: url("/images/work/green-chef/tablet.png");
         background-position: center;
     }
 
     .work-card:nth-child(2) .work-card-image {
-        background-image: url("../images/work/indream-interior-design-studio/tablet.png");
+        background-image: url("/images/work/indream-design/tablet.png");
         background-position: right 0;
     }
 
     .work-card:nth-child(3) .work-card-image {
-        background-image: url("../images/work/rombo-guitar-picks/tablet.png");
+        background-image: url("/images/work/rombo-guitar-picks/tablet.png");
         background-position: center;
     }
 
@@ -456,8 +444,7 @@ main section:not(:first-child) {
         height: 75px;
         min-width: 319px;
         border-radius: 0 0 40px 40px;
-        /*todo change color to F7F7F7*/
-        background: lightgrey;
+        background: #F7F7F7;
         display: flex;
         align-items: center;
     }
@@ -487,21 +474,20 @@ main section:not(:first-child) {
     }
 
     .work-card:nth-child(1) .work-card-image {
-        background-image: url("../images/work/green-cheef/mobile.png");
+        background-image: url("/images/work/green-chef/mobile.png");
     }
 
     .work-card:nth-child(2) .work-card-image {
-        background-image: url("../images/work/indream-interior-design-studio/mobile.png");
+        background-image: url("/images/work/indream-design/mobile.png");
     }
 
     .work-card:nth-child(3) .work-card-image {
-        background-image: url("../images/work/rombo-guitar-picks/mobile.png");
+        background-image: url("/images/work/rombo-guitar-picks/mobile.png");
     }
 
     .work-card-panel {
         border-radius: 0 0 40px 40px;
-        /*todo change color to F7F7F7*/
-        background: lightgrey;
+        background: #F7F7F7;
         height: 75px;
         display: flex;
         align-items: center;
@@ -525,8 +511,7 @@ main section:not(:first-child) {
         align-items: center;
         gap: 69px;
         border-radius: 60px;
-        /*todo change color to F6F6F6*/
-        background-color: lightgrey;
+        background-color: #F6F6F6;
     }
 
     .contact-block-avatar {
@@ -590,8 +575,7 @@ main section:not(:first-child) {
         align-items: center;
         gap: 40px;
         border-radius: 60px;
-        /*todo change color to F6F6F6*/
-        background-color: lightgrey;
+        background-color: #F6F6F6;
     }
 
     .contact-block-avatar {
@@ -609,8 +593,7 @@ main section:not(:first-child) {
         grid-template-rows: auto auto;
         justify-items: center;
         border-radius: 60px;
-        /*todo change color to F6F6F6*/
-        background-color: lightgrey;
+        background-color: #F6F6F6;
     }
 
     .contact-block-avatar {
